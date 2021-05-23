@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.12)
+project(basic LANGUAGES "CXX")
+set(CMAKE_CXX_COMPILER "g++")
+set(CFLAGS "-std=c++11 -Wall -Werror")
+set(SOURCE_FILE "basic01.cpp")
+message("this is cpp project basic file")
+add_executable(${PROJECT_NAME} ${SOURCE_FILE})
+target_link_libraries(${PROJECT_NAME} ${CFLAGS})
